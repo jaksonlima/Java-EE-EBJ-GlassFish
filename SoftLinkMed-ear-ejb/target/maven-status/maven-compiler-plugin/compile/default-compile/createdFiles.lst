@@ -1,0 +1,10 @@
+com\soft\link\med\bean\NewSessionBean.class
+com\soft\link\med\conexao\eao\PessoaEAO.class
+com\soft\link\med\persistencia\ConexaoProviderFactoryDAOImpl.class
+main\Main01.class
+main\Main02.class
+com\soft\link\med\conexao\eao\EAOProvider.class
+com\soft\link\med\conexao\dao\ConsultorioDAO.class
+com\soft\link\med\persistencia\EntityManagerProviderImpl.class
+com\soft\link\med\conexao\dao\ConnectionDAO.class
+com\soft\link\med\cdi\provider\bean\CDIProviderBeanImpl.class

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    
+    
+<persistence-unit name="SoftLinkMed" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>jdbc/SoftLinkMed</jta-data-source>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+        <property name="hibernate.show_sql" value="true"/>
+    </properties>
+</persistence-unit>
+    
+</persistence>
+
+<!--CONNECTION POOL HIBERNATE PERSISTENCE-->
+
+<!--<persistence-unit name="SoftLinkMed" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>jdbc/SoftLinkMed</jta-data-source>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+        <property name="hibernate.show_sql" value="true"/>
+    </properties>
+</persistence-unit>-->
+
+<!--CONNECTION RESOURCE LOCAL HIBERNATE PERSISTENCE PROVIDER-->
+
+<!--<persistence-unit name="JPAProj" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/classicmodels"/>
+        <property name="javax.persistence.jdbc.user" value="someuser"/>
+        <property name="javax.persistence.jdbc.password" value=""/>
+    
+        <property name='hibernate.show_sql' value='true'/>
+        <property name='hibernate.format_sql' value='true'/>
+        <property name='hibernate.dialect' value='org.hibernate.dialect.MySQL5InnoDBDialect'/>
+        <property name='hibernate.hbm2ddl.auto' value='update'/>
+    </properties>
+</persistence-unit>-->
+    
+<!--CONNECTION POOL ECLIPSE PERSISTENCE PROVIDER-->
+
+<!--<persistence-unit name="ocean-pu" transaction-type="JTA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <jta-data-source>jdbc/ocean</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <shared-cache-mode>NONE</shared-cache-mode>
+        <validation-mode>NONE</validation-mode>
+        <properties>
+                <property name="eclipselink.logging.level" value="FINE"/>
+                <property name="eclipselink.logging.parameters" value="true"/> 
+                 <property name="eclipselink.logging.logger" value="DefaultLogger"/> 
+                
+                <property name="eclipselink.query-results-cache" value="false"/>
+                <property name="eclipselink.jdbc.cache-statements" value="false"/>
+                <property name="eclipselink.cache.shared.Customer" value="false"/>
+                <property name="eclipselink.cache.shared.default" value="false"/>
+                <property name="eclipselink.persistence-context.flush-mode" value="commit"/>
+                <property name="eclipselink.persistence-context.close-on-commit" value="true"/>
+                <property name="eclipselink.persistence-context.persist-on-commit" value="false"/>
+                <property name="eclipselink.session.customizer" value="com.smartbr.model.listener.SmartEventListener"/>
+                <property name="eclipselink.target-database" value="com.smartbr.pattern.classes.CustomOraclePlatform"/> 
+                <property name="eclipselink.jdbc.allow-native-sql-queries" value="true" />
+                <property name="eclipselink.tenant-id" value="1"/>
+                
+               <property name="eclipselink.ddl-generation" value="create-tables"/>
+               <property name="eclipselink.ddl-generation.output-mode" value="sql-script"/>
+               <property name="eclipselink.application-location" value="D:\ddl"/>
+               <property name="eclipselink.create-ddl-jdbc-file-name" value="createDDL_ddlGeneration.txt"/>            
+        </properties>
+    </persistence-unit>-->
+
+<!--CONNECTION RESOURCE LOCAL ECLIPSE PERSISTENCE PROVIDER-->
+
+<!--<persistence-unit name="DemoPU" transaction-type="RESOURCE_LOCAL">
+ <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+  <properties>
+    <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+    <property name="javax.persistence.jdbc.user" value="myuser"/>
+    <property name="javax.persistence.jdbc.password" value="mypassword"/>
+    <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+  </properties>
+</persistence-unit>-->

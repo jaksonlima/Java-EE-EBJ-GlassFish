@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+        
+  
+  
+  <groupId>com.mycompany</groupId>
+        
+  
+  
+  <artifactId>SoftLinkMed-ear</artifactId>
+        
+  
+  
+  <version>1.0-SNAPSHOT</version>
+        
+  
+  
+  <packaging>pom</packaging>
+        
+  
+  
+  <name>SoftLinkMed-ear</name>
+      
+  
+  
+  <modules>
+              
+    
+    
+    <module>SoftLinkMed-ear-ear</module>
+              
+    
+    
+    <module>SoftLinkMed-ear-web</module>
+          
+    
+    <module>SoftLinkMed-ear-ejb</module>
+    <module>SoftLinkMed-ear-model</module>
+  </modules>
+    
+
+</project>
